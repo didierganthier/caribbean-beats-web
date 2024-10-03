@@ -1,0 +1,10 @@
+# Node.js modules
+node_modules/
+
+# Docker volumes
+/volumes/
+
+# Environment variables
+.env
+
+.history
