@@ -9,7 +9,11 @@ const RegisterPage = () => {
 
     const registerUser = async (e: React.FormEvent) => {
         e.preventDefault();
-        axios.post('/register', { name, email, password })
+        try {
+            axios.post('/register', { name, email, password })      
+        } catch (error) {
+            alert(`Error: ${error}`);
+        }
     }
 
     return (
